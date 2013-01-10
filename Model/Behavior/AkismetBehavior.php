@@ -1,9 +1,9 @@
 <?php
 /**
- * CakePHP Akismet Behavior for CakePHP 2.x
+ * CakePHP Akismet Plugin for CakePHP 2.x
  *
  * @copyright Copyright 2012, coryjthompson.com (http://coryjthompson.com/)
- * @link http://github.com/coryjthompson/akismet-behavior
+ * @link https://github.com/coryjthompson/Akismet-CakePHP
  * @license http://www.opensource.org/licenses/mit-license.php The MIT License
  */
 
