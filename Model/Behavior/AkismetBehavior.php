@@ -13,19 +13,6 @@ class AkismetBehavior extends ModelBehavior {
 	private $__akismetObj;
 
 	public function setup(Model $Model, $settings) {
-		/*if(!isset($this->settings[$Model->alias])){
-			$this->settings[$Model->alias] = array(
-				'fields' => array(
-					'author' => 'name',
-					'email' => 'email',
-					'url' => 'url',
-					'content' => 'content',
-					'spam' => 'spam'
-				),
-				'key' => '',
-				'blog' => 'http://coryjthompson.com'
-			);
-		}*/
 		Configure::load('Akismet.config');
 		$this->settings[$Model->alias] = Configure::read('akismet');
 
