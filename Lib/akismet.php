@@ -17,6 +17,10 @@ class Akismet extends HttpSocket {
 	public function __construct($key, $blog){
 		$this->__key = $key;
 		$this->__blog = $blog;
+	
+		if(!$this->isKeyValid()){
+			throw new Exception("Invalid Akismet API key");
+		}
 	}
 
 	public function isSpam($data){
